@@ -40,7 +40,7 @@ The following EXTRA features are implemented:
 
 I have chosen to duplicate the following layout from the **Airbnb** app:
 
-![Demo](Airbnb_Summary.png)
+<img src="Airbnb_Summary.png" alt="Demo" width="370" />
 
 ## Video Demo
 
