@@ -44,7 +44,7 @@ I have chosen to duplicate the following layout from the **Airbnb** app:
 
 ## Video Demo
 
-![Demo](codepath_demo.gif)
+![Demo](codepath_project3.gif)
 
 Here's a video / GIF that demos all of the app's implemented features:
 
