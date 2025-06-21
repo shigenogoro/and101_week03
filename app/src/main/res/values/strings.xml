@@ -1,7 +1,18 @@
 <resources>
     <string name="app_name">🐻‍❄️ PolarBearBnB</string>
+
+<!--  Block 1: House Description  -->
     <string name="house_description">ENTIRE HOUSE</string>
     <string name="house_image_description">House of Polar Bear</string>
     <string name="house_price">125🐧 / night</string>
     <string name="house_rating">⭐ 4.9</string>
+
+<!--  Block 2: Check-in/Check-out Information  -->
+    <string name="check_in_title">Check-in</string>
+    <string name="check_out_title">Check-out</string>
+    <string name="check_in_number">Polar Bears</string>
+    <string name="check_in_info_text">01 Dec</string>
+    <string name="check_out_info_text">10 Dec</string>
+    <string name="check_in_number_info">3 🐻‍❄️</string>
+
 </resources>

@@ -29,7 +29,7 @@
         android:layout_marginTop="70dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_title">
+        app:layout_constraintTop_toBottomOf="@id/app_title">
 
         <!-- Block 1: House Description  -->
         <LinearLayout
@@ -48,7 +48,7 @@
                 android:layout_marginStart="20dp"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/house_image">
+                app:layout_constraintTop_toTopOf="@id/house_image">
 
                 <TextView
                     android:id="@+id/house_description"
@@ -58,7 +58,7 @@
                     android:textColor="@color/dark_grey"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/app_title" />
+                    app:layout_constraintTop_toBottomOf="@id/app_title" />
 
                 <TextView
                     android:id="@+id/house_price"
@@ -69,7 +69,7 @@
                     android:textColor="@color/black"
                     android:textSize="24sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/house_description" />
+                    app:layout_constraintTop_toBottomOf="@id/house_description" />
 
                 <TextView
                     android:id="@+id/house_rating"
@@ -81,7 +81,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/house_price" />
+                    app:layout_constraintTop_toBottomOf="@id/house_price" />
             </LinearLayout>
 
             <ImageView
@@ -91,19 +91,104 @@
                 android:layout_marginStart="40dp"
                 android:contentDescription="@string/house_image_description"
                 android:src="@drawable/house_of_polar_bear"
-                app:layout_constraintStart_toEndOf="@+id/house_description_block_content" />
+                app:layout_constraintStart_toEndOf="@id/house_description_block_content" />
         </LinearLayout>
 
         <!-- Division Line -->
         <View
+            android:id="@+id/division_line1"
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="24dp"
             android:background="@color/light_grey"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/house_description_block" />
+            app:layout_constraintTop_toBottomOf="@id/house_description_block" />
+
+        <!-- Block 2: Check-in/Check-out Information -->
+        <TableLayout
+            android:id="@+id/check_in_check_out_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:stretchColumns="*"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/division_line1">
+
+            <!-- First Row: Titles -->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/check_in_text"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/check_in_title" />
+
+                <TextView
+                    android:id="@+id/check_out_text"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/check_out_title" />
+
+                <TextView
+                    android:id="@+id/check_in_number"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/check_in_number" />
+            </TableRow>
+
+            <!-- Second Row: Information -->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/check_in_info_text"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/check_in_info_text"
+                    android:textColor="@color/info_green"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/check_out_info_text"
+                    android:layout_width="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/check_out_info_text"
+                    android:textColor="@color/info_green"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/check_in_number_info"
+                    android:layout_width="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/check_in_number_info"
+                    android:textColor="@color/info_green"
+                    android:textSize="24sp" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Division Line -->
+        <View
+            android:id="@+id/division_line2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/light_grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check_in_check_out_block" />
+
+        <!-- Block 3: Work Trip Info -->
+
 
     </LinearLayout>
 
