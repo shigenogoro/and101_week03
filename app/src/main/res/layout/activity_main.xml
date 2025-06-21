@@ -38,6 +38,7 @@
             android:layout_height="120dp"
             android:layout_marginTop="15dp"
             android:orientation="horizontal"
+            android:importantForAccessibility="no"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -188,9 +189,54 @@
             app:layout_constraintTop_toBottomOf="@id/check_in_check_out_block" />
 
         <!-- Block 3: Work Trip Info -->
+        <LinearLayout
+            android:id="@+id/work_trip_info_block"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/work_trip_info_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:text="@string/work_trip_info_title"
+                android:textColor="@color/dark_grey"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:scaleX="1.2"
+                android:scaleY="1.1"
+                app:thumb="@drawable/custom_thumb"
+                app:thumbTint="@null"
+                app:track="@drawable/custom_track"
+                app:trackTint="@null"/>
+
+
+        </LinearLayout>
+
+        <!-- Division Line -->
+        <View
+            android:id="@+id/division_line3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/light_grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check_in_check_out_block" />
+
+        <!-- Block 4: Price Details -->
 
 
     </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

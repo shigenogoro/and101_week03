@@ -15,4 +15,10 @@
     <string name="check_out_info_text">10 Dec</string>
     <string name="check_in_number_info">3 🐻‍❄️</string>
 
+<!--    Block 3: Work Trip Info  -->
+    <string name="work_trip_info_title">Is this a work trip?</string>
+
+<!--    Block 4: Price Details  -->
+    <string name="price_title">FEES AND TAX Details</string>
+    <string name="ex_icon_description">exclamationicon</string>
 </resources>

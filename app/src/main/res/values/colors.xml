@@ -2,9 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="light_grey">#D3D3D3</color>"
+    <color name="light_grey">#D3D3D3</color>
+    <color name="medium_grey">#ABAAAA</color>
     <color name="dark_grey">#5D5D5D</color>
     <color name="airbnb_red">#7E0A30</color>
-    <color name="star_green">#01736B</color>"
+    <color name="star_green">#01736B</color>
     <color name="info_green">#0C9E91</color>
 </resources>
