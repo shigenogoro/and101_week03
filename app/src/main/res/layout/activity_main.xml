@@ -11,16 +11,17 @@
         android:id="@+id/app_title"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/app_name"
-        android:textSize="30sp"
         android:background="@color/airbnb_red"
-        android:textColor="@color/white"
+        android:fontFamily="@font/baloo_bhai_2_bold"
         android:gravity="center_vertical"
         android:paddingStart="10dp"
         android:paddingEnd="0dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <LinearLayout
@@ -55,6 +56,7 @@
                     android:id="@+id/house_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="@string/house_description"
                     android:textColor="@color/dark_grey"
                     android:textSize="16sp"
@@ -66,6 +68,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="9dp"
+                    android:fontFamily="@font/nunito"
                     android:text="@string/house_price"
                     android:textColor="@color/black"
                     android:textSize="24sp"
@@ -77,6 +80,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="9dp"
+                    android:fontFamily="@font/nunito"
                     android:text="@string/house_rating"
                     android:textColor="@color/star_green"
                     android:textSize="16sp"
@@ -125,18 +129,21 @@
                 <TextView
                     android:id="@+id/check_in_text"
                     android:layout_width="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:gravity="center"
                     android:text="@string/check_in_title" />
 
                 <TextView
                     android:id="@+id/check_out_text"
                     android:layout_width="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:gravity="center"
                     android:text="@string/check_out_title" />
 
                 <TextView
                     android:id="@+id/check_in_number"
                     android:layout_width="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:gravity="center"
                     android:text="@string/check_in_number" />
             </TableRow>
@@ -147,6 +154,7 @@
                 <TextView
                     android:id="@+id/check_in_info_text"
                     android:layout_width="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
                     android:gravity="center"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
@@ -157,9 +165,10 @@
                 <TextView
                     android:id="@+id/check_out_info_text"
                     android:layout_width="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
-                    android:gravity="center"
                     android:text="@string/check_out_info_text"
                     android:textColor="@color/info_green"
                     android:textSize="24sp" />
@@ -167,9 +176,10 @@
                 <TextView
                     android:id="@+id/check_in_number_info"
                     android:layout_width="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
-                    android:gravity="center"
                     android:text="@string/check_in_number_info"
                     android:textColor="@color/info_green"
                     android:textSize="24sp" />
@@ -202,6 +212,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/nunito"
                 android:text="@string/work_trip_info_title"
                 android:textColor="@color/dark_grey"
                 android:textSize="20sp" />
@@ -249,10 +260,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="5dp"
+                android:fontFamily="@font/nunito"
                 android:text="@string/price_title"
-                android:textStyle="bold"
                 android:textColor="@color/dark_grey"
                 android:textSize="12sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/work_trip_info_block" />
 
@@ -284,19 +296,20 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
                     android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/nunito"
                     android:text="@string/number_of_nights"
-                    android:textSize="17sp"
-                    />
+                    android:textSize="17sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/nunito"
                     android:gravity="end"
-                    android:textSize="17sp"
-                    android:text="@string/number_of_nights_value"/>
+                    android:text="@string/number_of_nights_value"
+                    android:textSize="17sp" />
             </TableRow>
 
             <!-- Second Row: Long Stay Discount -->
@@ -309,19 +322,20 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
                     android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/nunito"
                     android:text="@string/long_stay_discount_title"
-                    android:textSize="17sp"
-                    />
+                    android:textSize="17sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/nunito"
                     android:gravity="end"
-                    android:textSize="17sp"
-                    android:text="@string/long_stay_discount_value"/>
+                    android:text="@string/long_stay_discount_value"
+                    android:textSize="17sp" />
             </TableRow>
 
             <!-- Third Row: Early-Polar Bear Discount -->
@@ -334,19 +348,20 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
                     android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/nunito"
                     android:text="@string/early_polar_bear_discount_title"
-                    android:textSize="17sp"
-                    />
+                    android:textSize="17sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/nunito"
                     android:gravity="end"
-                    android:textSize="17sp"
-                    android:text="@string/early_polar_bear_discount_value"/>
+                    android:text="@string/early_polar_bear_discount_value"
+                    android:textSize="17sp" />
             </TableRow>
 
             <!-- Forth Row: Cleaning Fee -->
@@ -359,19 +374,20 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
                     android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/nunito"
                     android:text="@string/cleaning_fee_title"
-                    android:textSize="17sp"
-                    />
+                    android:textSize="17sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/nunito"
                     android:gravity="end"
-                    android:textSize="17sp"
-                    android:text="@string/cleaning_fee_value"/>
+                    android:text="@string/cleaning_fee_value"
+                    android:textSize="17sp" />
             </TableRow>
 
             <!-- Fifth Row: Service Fee -->
@@ -384,19 +400,20 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
                     android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/nunito"
                     android:text="@string/service_fee_title"
-                    android:textSize="17sp"
-                    />
+                    android:textSize="17sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/nunito"
                     android:gravity="end"
-                    android:textSize="17sp"
-                    android:text="@string/service_fee_value"/>
+                    android:text="@string/service_fee_value"
+                    android:textSize="17sp" />
             </TableRow>
 
             <!-- Sixth Row: Carbon Taxes and Fees -->
@@ -409,19 +426,20 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
                     android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/nunito"
                     android:text="@string/carbon_taxes_fee_title"
-                    android:textSize="17sp"
-                    />
+                    android:textSize="17sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/nunito"
                     android:gravity="end"
-                    android:textSize="17sp"
-                    android:text="@string/carbon_taxes_fee_value"/>
+                    android:text="@string/carbon_taxes_fee_value"
+                    android:textSize="17sp" />
             </TableRow>
         </TableLayout>
 
@@ -451,20 +469,22 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_bold"
                 android:gravity="start"
                 android:text="@string/total_price_title"
-                android:textStyle="bold"
-                android:textSize="17sp" />
+                android:textSize="17sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
+                android:fontFamily="@font/nunito_bold"
                 android:gravity="end"
-                android:text="@string/number_of_nights_value"
-                android:textStyle="bold"
-                android:textSize="17sp" />
+                android:text="@string/total_price_value"
+                android:textSize="17sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
@@ -486,14 +506,15 @@
         android:id="@+id/reserve_button"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_reserve_button"
+        android:fontFamily="@font/nunito_extrabold"
+        android:gravity="center"
         android:text="@string/reserve_button_text"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:background="@drawable/custom_reserve_button"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/division_line5" />
 
 

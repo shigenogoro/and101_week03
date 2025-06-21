@@ -36,7 +36,7 @@
 
 <!--    Block 5: Total Price  -->
     <string name="total_price_title">Total</string>
-    <string name="total_price_value">🐧1,097</string>
+    <string name="total_price_value">🐧1,097 penguins</string>
 
 <!--    Reserve Button-->
     <string name="reserve_button_text">Reserve</string>
