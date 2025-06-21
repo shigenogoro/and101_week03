@@ -34,8 +34,10 @@
     <string name="carbon_taxes_fee_title">Carbon taxes and fees</string>
     <string name="carbon_taxes_fee_value">🐧180</string>
 
-<!--        Block 5: Total Price  -->
+<!--    Block 5: Total Price  -->
     <string name="total_price_title">Total</string>
     <string name="total_price_value">🐧1,097</string>
 
+<!--    Reserve Button-->
+    <string name="reserve_button_text">Reserve</string>
 </resources>

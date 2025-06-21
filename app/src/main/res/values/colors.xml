@@ -6,6 +6,7 @@
     <color name="medium_grey">#ABAAAA</color>
     <color name="dark_grey">#5D5D5D</color>
     <color name="airbnb_red">#7E0A30</color>
+    <color name="airbnb_red_light">#F61057</color>
     <color name="star_green">#01736B</color>
     <color name="info_green">#0C9E91</color>
 </resources>
