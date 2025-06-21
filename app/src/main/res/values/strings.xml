@@ -13,7 +13,7 @@
     <string name="check_in_number">Polar Bears</string>
     <string name="check_in_info_text">01 Dec</string>
     <string name="check_out_info_text">10 Dec</string>
-    <string name="check_in_number_info">3 🐻‍❄️</string>
+    <string name="check_in_number_info">2 🐻‍❄️</string>
 
 <!--    Block 3: Work Trip Info  -->
     <string name="work_trip_info_title">Is this a work trip?</string>
@@ -21,4 +21,17 @@
 <!--    Block 4: Price Details  -->
     <string name="price_title">FEES AND TAX Details</string>
     <string name="ex_icon_description">exclamationicon</string>
+    <string name="number_of_nights">🐧157 × 7 nights</string>
+    <string name="number_of_nights_value">🐧 1,097</string>
+    <string name="long_stay_discount_title">Long-stay discount</string>
+    <string name="long_stay_discount_value">- 🐧110</string>
+    <string name="early_polar_bear_discount_title">Early-🐻‍❄️ discount: 10% off</string>
+    <string name="early_polar_bear_discount_value">- 🐧110</string>
+    <string name="cleaning_fee_title">Cleaning fee</string>
+    <string name="cleaning_fee_value">🐧102</string>
+    <string name="service_fee_title">Service fee</string>
+    <string name="service_fee_value">🐧166</string>
+    <string name="carbon_taxes_fee_title">Carbon taxes and fees</string>
+    <string name="carbon_taxes_fee_value">🐧180</string>
+
 </resources>

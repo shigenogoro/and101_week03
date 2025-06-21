@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/app_title"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:text="@string/app_name"
         android:textSize="30sp"
         android:background="@color/airbnb_red"
@@ -26,7 +26,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="45dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/app_title">
@@ -232,7 +232,208 @@
             app:layout_constraintTop_toBottomOf="@id/check_in_check_out_block" />
 
         <!-- Block 4: Price Details -->
+        <LinearLayout
+            android:id="@+id/price_details_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/division_line3">
 
+            <TextView
+                android:id="@+id/price_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/price_title"
+                android:textStyle="bold"
+                android:textColor="@color/dark_grey"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/work_trip_info_block" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:contentDescription="@string/ex_icon_description"
+                android:src="@drawable/exclamation_warning_round_icon"
+                app:tint="@color/dark_grey"
+                app:layout_constraintStart_toEndOf="@id/price_title" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/price_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/price_details_block"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <!-- First Row: number of nights -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_gravity="start"
+                    android:text="@string/number_of_nights"
+                    android:textSize="17sp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="17sp"
+                    android:text="@string/number_of_nights_value"/>
+            </TableRow>
+
+            <!-- Second Row: Long Stay Discount -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_gravity="start"
+                    android:text="@string/long_stay_discount_title"
+                    android:textSize="17sp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="17sp"
+                    android:text="@string/long_stay_discount_value"/>
+            </TableRow>
+
+            <!-- Third Row: Early-Polar Bear Discount -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_gravity="start"
+                    android:text="@string/early_polar_bear_discount_title"
+                    android:textSize="17sp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="17sp"
+                    android:text="@string/early_polar_bear_discount_value"/>
+            </TableRow>
+
+            <!-- Forth Row: Cleaning Fee -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_gravity="start"
+                    android:text="@string/cleaning_fee_title"
+                    android:textSize="17sp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="17sp"
+                    android:text="@string/cleaning_fee_value"/>
+            </TableRow>
+
+            <!-- Fifth Row: Service Fee -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_gravity="start"
+                    android:text="@string/service_fee_title"
+                    android:textSize="17sp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="17sp"
+                    android:text="@string/service_fee_value"/>
+            </TableRow>
+
+            <!-- Sixth Row: Carbon Taxes and Fees -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_gravity="start"
+                    android:text="@string/carbon_taxes_fee_title"
+                    android:textSize="17sp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="17sp"
+                    android:text="@string/carbon_taxes_fee_value"/>
+            </TableRow>
+        </TableLayout>
+
+        <!-- Division Line -->
+        <View
+            android:id="@+id/division_line4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/light_grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check_in_check_out_block" />
 
     </LinearLayout>
 
