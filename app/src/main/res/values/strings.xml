@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">PolarBearBnB</string>
+    <string name="app_name">🐻‍❄️ PolarBearBnB</string>
+    <string name="house_description">ENTIRE HOUSE</string>
+    <string name="house_image_description">House of Polar Bear</string>
+    <string name="house_price">125🐧 / night</string>
+    <string name="house_rating">⭐ 4.9</string>
 </resources>

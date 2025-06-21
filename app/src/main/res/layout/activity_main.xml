@@ -8,12 +8,67 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:background="@color/airbnb_red"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/house_image"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/house_of_polar_bear"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/house_image_description"
+        app:layout_constraintTop_toBottomOf="@+id/app_title" />
+
+    <TextView
+        android:id="@+id/house_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/house_description"
+        android:textColor="@color/dark_grey"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/app_title" />
 
+    <TextView
+        android:id="@+id/house_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/house_price"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/house_description" />
+
+    <TextView
+        android:id="@+id/house_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/house_rating"
+        android:textColor="@color/star_green"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/house_price" />
+
+    <
 </androidx.constraintlayout.widget.ConstraintLayout>
