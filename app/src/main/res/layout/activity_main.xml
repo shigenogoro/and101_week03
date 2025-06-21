@@ -223,10 +223,10 @@
                 android:layout_marginEnd="20dp"
                 android:scaleX="1.2"
                 android:scaleY="1.1"
-                app:thumb="@drawable/custom_thumb"
-                app:thumbTint="@null"
-                app:track="@drawable/custom_track"
-                app:trackTint="@null"/>
+                android:thumb="@drawable/custom_thumb"
+                android:thumbTint="@null"
+                android:track="@drawable/custom_track"
+                android:trackTint="@null"/>
 
 
         </LinearLayout>
@@ -273,6 +273,7 @@
                 android:layout_height="15dp"
                 android:contentDescription="@string/ex_icon_description"
                 android:src="@drawable/exclamation_warning_round_icon"
+                android:tooltipText="@string/fee_tooltips_text"
                 app:tint="@color/dark_grey"
                 app:layout_constraintStart_toEndOf="@id/price_title" />
         </LinearLayout>

@@ -21,6 +21,7 @@
 <!--    Block 4: Price Details  -->
     <string name="price_title">FEES AND TAX Details</string>
     <string name="ex_icon_description">exclamationicon</string>
+    <string name="fee_tooltips_text">This includes service fees and local taxes. The final amount will be shown before payment.</string>"
     <string name="number_of_nights">🐧157 × 7 nights</string>
     <string name="number_of_nights_value">🐧 1,097</string>
     <string name="long_stay_discount_title">Long-stay discount</string>
