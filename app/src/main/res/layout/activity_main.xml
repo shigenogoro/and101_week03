@@ -24,9 +24,9 @@
 
 
     <LinearLayout
+        android:id="@+id/app_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="45dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/app_title">
@@ -192,7 +192,7 @@
         <LinearLayout
             android:id="@+id/work_trip_info_block"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:orientation="horizontal"
             android:gravity="center_vertical">
 
@@ -435,7 +435,50 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/check_in_check_out_block" />
 
+        <!-- Block 5: Total Price -->
+        <LinearLayout
+            android:id="@+id/total_price_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/division_line4"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="start"
+                android:text="@string/total_price_title"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/number_of_nights_value"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+        </LinearLayout>
+
     </LinearLayout>
+
+    <!-- Division Line -->
+    <View
+        android:id="@+id/division_line5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_content" />
 
 
 
